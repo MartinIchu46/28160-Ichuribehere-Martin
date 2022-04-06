@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'MedievalSharp', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg,#cd3b3c 0%,#f59b60 37.25%,#06515b 100%);
+    
+}
+
+.navigation{
+    flex-grow: 1;
+    color: white;
+}
+
+.btn--carrito{
+    border: none;
+    background: linear-gradient(270deg,#3d4142 0%,#a1a5a7 37.25%,#3d4142 100%);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-family:'MedievalSharp', cursive;
+}
+
+.cant--carrito{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+}
+
+.item{
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+#main{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    position: absolute;
+    box-shadow: 10px 10px 15px rgba(67,224,217,0.5);
+    flex-direction: column;
+    background: linear-gradient(270deg, #12a3b6 0%, #8ddf6d 37.25%, #941d8e 100%);
+    border: 2px solid red;
+    width: 30%;
+    visibility: hidden;
+    left: 70%;
+}
+
+.active {
+    visibility: visible;
+}
+
+/*cards de ecommerce*/
+.caja{
+    margin: auto;
+}
+.caja--img{
+    width: 180px;
+}.caja--datos{
+    text-align: center;
+}
+
+/*cards de carrito*/
+
+.caja--carrito{
+    width: 200px;
+    text-align: center;
+}
+.caja--carrito-img{
+    width: 150px;
+}.caja--carrito--datos{
+    border: 1px solid red;
+    color: white;
+    font-weight: bold;
+}
